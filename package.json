@@ -19,5 +19,8 @@
   "homepage": "https://github.com/gabryellcorrea/meat-api#readme",
   "dependencies": {
     "restify": "6.3.4"
+  },
+  "devDependencies": {
+    "@types/restify": "5.0.6"
   }
 }
