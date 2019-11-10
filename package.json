@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/gabryellcorrea/meat-api/issues"
   },
-  "homepage": "https://github.com/gabryellcorrea/meat-api#readme"
+  "homepage": "https://github.com/gabryellcorrea/meat-api#readme",
+  "dependencies": {
+    "restify": "6.3.4"
+  }
 }
