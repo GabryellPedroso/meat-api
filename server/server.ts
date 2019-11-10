@@ -17,11 +17,14 @@ export class Server {
   initRoutes(routers: Router[]): Promise<any> {
     return new Promise((resolve, reject) => {
       try {
+        
         this.application = restify.createServer({
           name: 'meat-api',
           version: '1.0.0'
         })
+
         this.application.use(restify.plugins.queryParser())
+        this.application.use(restify.plugins.bodyParser())
 
 
         // Routes
@@ -33,6 +36,7 @@ export class Server {
         this.application.listen(environment.server.port, () => {
           resolve(this.application)
         })
+      
       } catch(error) {
         reject(error)
       }
